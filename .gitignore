@@ -1,0 +1,7 @@
+// Latex
+*.aux
+*.log
+*.gz
+*.out
+*.pdf
+*.toc

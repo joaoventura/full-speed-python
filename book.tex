@@ -1,0 +1,63 @@
+\documentclass[12pt, a4paper, oneside]{book}
+
+% Fonts
+\usepackage[]{opensans}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Paragraphs
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+
+% Margins
+\usepackage[margin=1in]{geometry}
+
+% Images
+\usepackage{graphicx}
+\usepackage{float}
+
+% Source code
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Source code formatting
+\lstset{
+	backgroundcolor=\color[rgb]{0.95,0.95,0.95},
+	basicstyle=\footnotesize,
+	language=Python,
+	aboveskip=1em,
+	belowskip=1em,
+}
+
+% Headers and footers
+\pagestyle{plain} 
+
+% Urls
+\usepackage{hyperref}
+
+% Equations
+\usepackage{amsmath}
+
+
+\begin{document}
+
+\title{At full speed with Python}
+\author{João Ventura}
+\date{}
+
+\maketitle
+
+{
+	\setcounter{tocdepth}{2}
+	\tableofcontents
+}
+
+\include{chapters/introduction}
+\include{chapters/installation}
+\include{chapters/basic-datatypes}
+\include{chapters/functions}
+\include{chapters/loops}
+\include{chapters/dictionaries}
+\include{chapters/classes}
+
+\end{document}

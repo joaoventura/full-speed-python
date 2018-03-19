@@ -1,0 +1,146 @@
+\chapter{Basic datatypes}\label{basic-datatypes}
+
+In this chapter we will work with the most basic datatypes, numbers, strings and lists. Start your Python REPL and write the following on it:
+
+\begin{lstlisting}
+>>> a = 2
+>>> type(a)
+<class 'int'>
+>>> b = 2.5
+>>> type(b)
+<class 'float'>
+\end{lstlisting}
+
+Basically, you are declaring two variables (named "a" and "b") which will hold some numbers: variable "a" is an integer number while variable "b" is a real number. We can now use our variables or any other numbers to do some calculations:
+
+\begin{lstlisting}
+>>> a + b
+4.5
+>>> (a + b) * 2
+9.0
+>>> 2 + 2 + 4 - 2/3
+7.333333333333333
+\end{lstlisting}
+
+Python also has support for string datatypes. Strings are sequences of characters (like words) and can be defined using single or double quotes:
+
+\begin{lstlisting}
+>>> hi = "hello"
+>>> hi
+'hello'
+>>> bye = 'goodbye'
+>>> bye
+'goodbye'
+\end{lstlisting}
+
+You can add strings to concatenate them but you can not mix different datatypes, such as strings and integers.
+
+\begin{lstlisting}
+>>> hi + "world"
+'helloworld'
+>>> "Hello" + 3
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: must be str, not int
+\end{lstlisting}
+
+However, multiplication seems to work as repetition:
+
+\begin{lstlisting}
+>>> "Hello" * 3
+'HelloHelloHello'
+\end{lstlisting}
+
+Finally, Python also supports the list datatype. Lists are data structures that allows us to group some values. Lists can have values of several types and you can also mix different types within the same list although usually all values are usually of the same datatype. 
+
+Lists are created by starting and ending with square brackets and separated by commas. The values in a list can be accessed by its position where 0 is the index of the first value:
+
+\begin{lstlisting}
+>>> l = [1, 2, 3, 4, 5]
+>>> l[0]
+1
+>>> l[1]
+2
+\end{lstlisting}
+
+Can you access the number 4 in the previous list?
+
+Sometimes you want just a small portion of a list, a sublist. Sublists can be retrieved using a technique called \textit{slicing}, which consists on using the start and end indexes on the sublist:
+
+\begin{lstlisting}
+>>> l = ['a', 'b', 'c', 'd', 'e']
+>>> l[1:3]
+['b', 'c']
+\end{lstlisting}
+
+Finally, there's also some arithmetic that you can do on lists, like adding two lists together or repeating the contents of a list.
+
+\begin{lstlisting}
+>>> [1,2] + [3,4]
+[1, 2, 3, 4]
+>>> [1,2] * 2
+[1, 2, 1, 2]
+\end{lstlisting}
+
+
+\section{Exercises with numbers}
+
+\begin{enumerate}
+
+\item Try the following mathematical calculations and guess what is happening: $(3 / 2)$, $(3 // 2)$, $(3 \% 2)$, $(3**2)$.
+
+Suggestion: check the python library reference at \url{https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex}.
+
+\item Calculate the average of the following sequences of numbers: (2, 4), (4, 8, 9), (12, 14/6, 15)
+
+\item The volume of a sphere is given by $4/3\pi r^3$. Calculate the volume of a sphere of radius 5. Suggestion: create a variable named "pi" with the value of 3.1415.
+
+\item Use the module operator (\%) to check which of the following numbers is even or odd: (1, 5, 20, 60/7).
+
+Suggestion: the remainder of $x/2$ is always zero when $x$ is even.
+
+\item Find some values for $x$ and $y$ such that $x < 1/3 < y$ returns "True" on the Python REPL. Suggestion: try $0 < 1/3 < 1$ on the REPL.
+
+\end{enumerate}
+
+\section{Exercises with strings}
+
+Using the Python documentation on strings (\url{https://docs.python.org/3/library/string.html)}, solve the following exercises:
+
+\begin{enumerate}
+
+\item Initialize the string "abc" on a variable named "s":
+\begin{enumerate}
+\item Use a function to get the length of the string.
+\item Write the necessary sequence of operations to transform the string "abc" in "aaabbbccc". Suggestion: Use string concatenation and string indexes.
+\end{enumerate}
+
+\item Initialize the string "aaabbbccc" on a variable named "s":
+\begin{enumerate}
+\item Use a function that allows you to find the first occurence of "b" in the string, and the first occurence of "ccc".
+\item Use a function that allows you to replace all occurences of "a" to "X", and then use the same function to change only the first occurence of "a" to "X".
+\end{enumerate}
+
+\item Starting from the string "aaa bbb ccc", what sequences of operations do you need to arrive at the following strings? You can find the "replace" function.
+\begin{enumerate}
+\item "AAA BBB CCC"
+\item "AAA bbb CCC"
+\end{enumerate}
+
+\end{enumerate}
+
+\section{Exercises with lists}
+
+Create a list named "l" with the following values ([1, 4, 9, 10, 23]). Using the Python documentation about lists (\url{https://docs.python.org/3.5/tutorial/introduction.html#lists}) solve the following exercises:
+
+\begin{enumerate}
+
+\item Using list slicing get the sublists [4, 9] and [10, 23].
+
+\item Append the value 90 to the end of the list "l". Check the difference between list concatenation and the "append" method.
+
+\item Calculate the average value of all values on the list. You can use the "sum" and "len" functions.
+
+\item Remove the sublist [4, 9].
+
+\end{enumerate}
