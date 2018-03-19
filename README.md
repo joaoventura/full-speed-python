@@ -6,4 +6,4 @@ These exercises have been used extensively in my web development and distributed
 
 This book is made available in github (https://github.com/joaoventura/full-speed-python) so I appreciate any pull requests to correct misspellings or to suggest new exercises or clarification of the current content.
 
-The released pdfs can be found at https://github.com/joaoventura/full-speed-python/releases/.
+The generated files (pdf and epub) can be found at https://github.com/joaoventura/full-speed-python/releases/.

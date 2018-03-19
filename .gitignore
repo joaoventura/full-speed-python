@@ -1,7 +1,10 @@
-// Latex
+# Latex
 *.aux
 *.log
 *.gz
 *.out
-*.pdf
 *.toc
+
+# Releases
+*.pdf
+*.epub
