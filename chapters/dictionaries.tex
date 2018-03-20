@@ -23,7 +23,7 @@ It is possible to iterate over the contents of a dictionary using "items", like 
 \begin{lstlisting}
 >>> for name, age in ages.items():
 ...     print(name, age)
-... 
+...
 Peter 10
 Isabel 11
 Anna 9
@@ -34,7 +34,7 @@ Maria 12
 Gabriel 10
 \end{lstlisting}
 
-However, keys don't need to be necessarily strings and integers but can be any [immutable](https://docs.python.org/3/tutorial/datastructures.html#dictionaries) objects:
+However, dictionary keys don't need to be necessarily strings but can be any \href{https://docs.python.org/3/tutorial/datastructures.html#dictionaries}{immutable} object:
 
 \begin{lstlisting}
 d = {
@@ -47,7 +47,7 @@ d = {
 [2, 2, 2]
 \end{lstlisting}
 
-Even more, you can use other dictionaries as values:
+And you can also use other dictionaries as values:
 
 \begin{lstlisting}
 students = {
@@ -62,7 +62,7 @@ students = {
 'Lisbon'
 \end{lstlisting}
 
-This is quite useful to structure hierarchical information. 
+This is quite useful to structure hierarchical information.
 
 \section{Exercises with dictionaries}
 
@@ -113,6 +113,6 @@ students = {
 
 \item Implement a function that receives the students dict and returns the average age.
 
-\item Implement a function that receives the students dict and an address, and returns a list with the name of all students which address matches the address in the argument. For instance, invoking "find\_students(students, 'Lisbon')" should return Peter and Anna. 
+\item Implement a function that receives the students dict and an address, and returns a list with the name of all students which address matches the address in the argument. For instance, invoking "find\_students(students, 'Lisbon')" should return Peter and Anna.
 
 \end{enumerate}
