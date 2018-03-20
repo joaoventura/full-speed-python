@@ -10,4 +10,4 @@ pdf:
 clean:
 	rm *.epub *.pdf
 	rm chapters/*.aux
-	rm *.aux *.log *.out *.toc
+	rm *.aux *.log *.out *.toc *.gz
