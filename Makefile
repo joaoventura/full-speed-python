@@ -1,6 +1,4 @@
-BUILD = build
-
-clean: rm -rf $(BUILD)
+all: epub pdf
 
 epub:
 	pandoc -o full-speed-python.epub \
@@ -11,3 +9,9 @@ epub:
 		chapters/loops.tex \
 		chapters/dictionaries.tex \
 		chapters/classes.tex \
+
+pdf:
+	pdflatex full-speed-python.tex
+
+clean:
+	rm *.epub *.pdf
