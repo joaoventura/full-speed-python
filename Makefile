@@ -6,6 +6,7 @@ epub:
 		chapters/introduction.md \
 		chapters/installation.md \
 		chapters/basic-datatypes.md \
+		chapters/lists.md \
 
 pdf:
 	pandoc -o full-speed-python.pdf \
@@ -14,6 +15,7 @@ pdf:
 		chapters/introduction.md \
 		chapters/installation.md \
 		chapters/basic-datatypes.md \
+		chapters/lists.md \
 
 clean:
 	rm *.epub *.pdf
