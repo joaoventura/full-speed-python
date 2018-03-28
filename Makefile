@@ -17,7 +17,7 @@ epub:
 pdf:
 	pandoc -o full-speed-python.pdf \
 		metadata.yaml \
-		-H preamble.tex \
+		-H latex/preamble.tex \
 		chapters/introduction.md \
 		chapters/installation.md \
 		chapters/basic-datatypes.md \
