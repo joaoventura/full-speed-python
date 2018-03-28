@@ -1,24 +1,24 @@
-\chapter{Iterators}\label{iterators}
+# Iterators
 
 As we saw previously, in Python we use the "for" loop to iterate over the contents of objects:
 
-\begin{lstlisting}
+```Python
 >>> for value in [0, 1, 2, 3, 4, 5]:
 ...     print(value)
-... 
+...
 0
 1
 4
 9
 16
 25
-\end{lstlisting}
+```
 
 Objects that can be used with a "for" loop are called iterators. An iterator is, therefore, an object that follows the iteration protocol.
 
 The built-in function "iter" can be used to build iterator objects, while the "next" function can be used to gradually iterate over their content:
 
-\begin{lstlisting}
+```Python
 >>> my_iter = iter([1, 2, 3])
 >>> my_iter
 <list_iterator object at 0x10ed41cc0>
@@ -32,15 +32,15 @@ The built-in function "iter" can be used to build iterator objects, while the "n
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 StopIteration
-\end{lstlisting}
+```
 
 If there are no more elements, the iterator raises a "StopIteration" exception.
 
-\section{Iterator classes}
+## Iterator classes
 
-Iterators can be implemented as classes. You just need to implement the "\_\_next\_\_" and "\_\_iter\_\_" methods. Here's an example of a class that mimics the "range" function, returning all values from "a" to "b":
+Iterators can be implemented as classes. You just need to implement the "\_\_next\_\_" and "\_\_iter\_\_" methods. Here’s an example of a class that mimics the "range" function, returning all values from "a" to "b":
 
-\begin{lstlisting}
+```Python
 class MyRange:
 
     def __init__(self, a, b):
@@ -57,11 +57,11 @@ class MyRange:
             return value
         else:
             raise StopIteration
-\end{lstlisting}
+```
 
 Basically, on every call to "next" it moves forward the internal variable "a" and returns its value. When it reaches "b", it raises the StopIteration exception.
 
-\begin{lstlisting}
+```Python
 >>> myrange = MyRange(1, 4)
 >>> next(myrange)
 1
@@ -73,34 +73,29 @@ Basically, on every call to "next" it moves forward the internal variable "a" an
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 StopIteration
-\end{lstlisting}
+```
 
 But most important, you can use the iterator class in a "for" loop:
 
-\begin{lstlisting}
+```Python
 >>> for value in MyRange(1, 4):
 ...     print(value)
-... 
+...
 1
 2
 3
-\end{lstlisting}
+```
 
+## Exercises with iterators
 
-\section{Exercises with iterators}
+1.  Implement an iterator class to return the square of all numbers from "a" to "b".
 
-\begin{enumerate}
+2.  Implement an iterator class to return all the even numbers from 1 to \(n\).
 
-\item Implement an iterator class to return the square of all numbers from "a" to "b".
+3.  Implement an iterator class to return all the odd numbers from 1 to \(n\).
 
-\item Implement an iterator class to return all the even numbers from 1 to $n$.
+4.  Implement an iterator class to return all numbers from \(n\) down to 0.
 
-\item Implement an iterator class to return all the odd numbers from 1 to $n$.
+5.  Implement an iterator class to return the fibonnaci sequence from the first element up to \(n\). You can check the definition of the fibonnaci sequence in the function’s chapter. These are the first numbers of the sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 
-\item Implement an iterator class to return all numbers from $n$ down to 0.
-
-\item Implement an iterator class to return the fibonnaci sequence from the first element up to $n$. You can check the definition of the fibonnaci sequence in the function's chapter. These are the first numbers of the sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
-
-\item Implement an iterator class to return all consecutive pairs of numbers from 0 until $n$, such as (0, 1), (1, 2), (2, 3)...
-
-\end{enumerate}
+6.  Implement an iterator class to return all consecutive pairs of numbers from 0 until \(n\), such as (0, 1), (1, 2), (2, 3)...
