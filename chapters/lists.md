@@ -4,30 +4,36 @@ Python lists are data structures that group sequences of elements. Lists can hav
 
 Lists are created using square brackets and the elements separated by commas. The elements in a list can be accessed by their positions where 0 is the index of the first element:
 
-    >>> l = [1, 2, 3, 4, 5]
-    >>> l[0]
-    1
-    >>> l[1]
-    2
+```Python
+>>> l = [1, 2, 3, 4, 5]
+>>> l[0]
+1
+>>> l[1]
+2
+```
 
 Can you access the number 4 in the previous list?
 
 Sometimes you want just a small portion of a list, a sublist. Sublists can be retrieved using a technique called *slicing*, which consists on defining the start and end indexes:
 
-    >>> l = ['a', 'b', 'c', 'd', 'e']
-    >>> l[1:3]
-    ['b', 'c']
+```Python
+>>> l = ['a', 'b', 'c', 'd', 'e']
+>>> l[1:3]
+['b', 'c']
+```
 
 Finally, arithmetic with lists is also possible, like adding two lists together or repeating the contents of a list.
 
-    >>> [1,2] + [3,4]
-    [1, 2, 3, 4]
-    >>> [1,2] * 2
-    [1, 2, 1, 2]
+```Python
+>>> [1,2] + [3,4]
+[1, 2, 3, 4]
+>>> [1,2] * 2
+[1, 2, 1, 2]
+```
 
 ## Exercises with lists
 
-Create a list named "l" with the following values (\[1, 4, 9, 10, 23\]). Using the Python documentation about lists (<https://docs.python.org/3.5/tutorial/introduction.html#lists>) solve the following exercises:
+Create a list named "l" with the following values ([1, 4, 9, 10, 23]). Using the Python documentation about lists (<https://docs.python.org/3.5/tutorial/introduction.html#lists>) solve the following exercises:
 
 1.  Using list slicing get the sublists \[4, 9\] and \[10, 23\].
 
@@ -35,24 +41,30 @@ Create a list named "l" with the following values (\[1, 4, 9, 10, 23\]). Using t
 
 3.  Calculate the average value of all values on the list. You can use the "sum" and "len" functions.
 
-4.  Remove the sublist \[4, 9\].
+4.  Remove the sublist [4, 9].
 
 ## List comprehensions
 
 List comprehensions are a concise way to create lists. It consists of square brackets containing an expression followed by the "for" keyword. The result will be a list whose results match the expression. Here’s how to create a list with the squared numbers of another list.
 
-    >>> [x*x for x in [0, 1, 2, 3]]
-    [0, 1, 4, 9]
+```Python
+>>> [x*x for x in [0, 1, 2, 3]]
+[0, 1, 4, 9]
+```
 
 Given its flexibility, list comprehensions generally make use of the "range" function which returns a range of numbers:
 
-    >>> [x*x for x in range(4)]
-    [0, 1, 4, 9]
+```Python
+>>> [x*x for x in range(4)]
+[0, 1, 4, 9]
+```
 
 Sometimes you may want to filter the elements by a given condition. The "if" keyword can be used in those cases:
 
-    >>> [x for x in range(10) if x % 2 == 0]
-    [0, 2, 4, 6, 8]
+```Python
+>>> [x for x in range(10) if x % 2 == 0]
+[0, 2, 4, 6, 8]
+```
 
 The exemple above returns all even values in range 0..10. More about list comprehensions can be found at <https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions>.
 
