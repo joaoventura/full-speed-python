@@ -1,6 +1,6 @@
 \chapter{Basic datatypes}\label{basic-datatypes}
 
-In this chapter we will work with the most basic datatypes, numbers, strings and lists. Start your Python REPL and write the following on it:
+In this chapter we will work with the most basic datatypes, numbers and strings. Start your Python REPL and write the following:
 
 \begin{lstlisting}
 >>> a = 2
@@ -51,37 +51,6 @@ However, multiplication works as repetition:
 'HelloHelloHello'
 \end{lstlisting}
 
-Finally, Python also supports the list datatype. Lists are data structures that allows us to group some values. Lists can have values of several types and you can also mix different types within the same list although all values are usually of the same datatype. 
-
-Lists are created by starting and ending with square brackets and separated by commas. The values in a list can be accessed by its position where 0 is the index of the first value:
-
-\begin{lstlisting}
->>> l = [1, 2, 3, 4, 5]
->>> l[0]
-1
->>> l[1]
-2
-\end{lstlisting}
-
-Can you access the number 4 in the previous list?
-
-Sometimes you want just a small portion of a list, a sublist. Sublists can be retrieved using a technique called \textit{slicing}, which consists on using the start and end indexes on the sublist:
-
-\begin{lstlisting}
->>> l = ['a', 'b', 'c', 'd', 'e']
->>> l[1:3]
-['b', 'c']
-\end{lstlisting}
-
-Finally, there's also some arithmetic that you can do on lists, like adding two lists together or repeating the contents of a list.
-
-\begin{lstlisting}
->>> [1,2] + [3,4]
-[1, 2, 3, 4]
->>> [1,2] * 2
-[1, 2, 1, 2]
-\end{lstlisting}
-
 
 \section{Exercises with numbers}
 
@@ -126,21 +95,5 @@ Using the Python documentation on strings (\url{https://docs.python.org/3/librar
 \item "AAA BBB CCC"
 \item "AAA bbb CCC"
 \end{enumerate}
-
-\end{enumerate}
-
-\section{Exercises with lists}
-
-Create a list named "l" with the following values ([1, 4, 9, 10, 23]). Using the Python documentation about lists (\url{https://docs.python.org/3.5/tutorial/introduction.html#lists}) solve the following exercises:
-
-\begin{enumerate}
-
-\item Using list slicing get the sublists [4, 9] and [10, 23].
-
-\item Append the value 90 to the end of the list "l". Check the difference between list concatenation and the "append" method.
-
-\item Calculate the average value of all values on the list. You can use the "sum" and "len" functions.
-
-\item Remove the sublist [4, 9].
 
 \end{enumerate}
