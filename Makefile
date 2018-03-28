@@ -5,6 +5,7 @@ epub:
 		metadata.yaml \
 		chapters/introduction.md \
 		chapters/installation.md \
+		chapters/basic-datatypes.md \
 
 pdf:
 	pandoc -o full-speed-python.pdf \
@@ -12,6 +13,7 @@ pdf:
 		-H preamble.tex \
 		chapters/introduction.md \
 		chapters/installation.md \
+		chapters/basic-datatypes.md \
 
 clean:
 	rm *.epub *.pdf
