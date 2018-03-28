@@ -1,0 +1,42 @@
+% Paper and margins
+\usepackage[a4paper, margin=1in]{geometry}
+
+% Fonts
+\usepackage[]{opensans}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Paragraphs
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+
+% Images
+\usepackage{graphicx}
+\usepackage{float}
+
+% All images should be where they are defined
+\makeatletter
+\def\fps@figure{H}
+\makeatother
+
+% Source code
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Source code formatting
+\lstset{
+	backgroundcolor=\color[rgb]{0.95,0.95,0.95},
+	basicstyle=\footnotesize,
+	language=Python,
+	aboveskip=1em,
+	belowskip=1em,
+}
+
+% Headers and footers
+\pagestyle{plain}
+
+% Urls
+\usepackage{hyperref}
+
+% Equations
+\usepackage{amsmath}

@@ -1,0 +1,12 @@
+---
+title: Full Speed Python
+subtitle: v0.4
+author: João Ventura
+language: en-US
+
+# Variables for Latex
+documentclass: book
+classoption: oneside
+fontsize: 12pt
+toc: true
+---
