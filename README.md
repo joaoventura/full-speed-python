@@ -11,4 +11,6 @@ The source of this book is available on github (https://github.com/joaoventura/f
 
 ## Building
 
-The pdf file is built with pdflatex, so you may need to download a latex distribution. The epub file is built with [pandoc](http://pandoc.org/).
+Run `make pdf` or `make epub` to build the books.
+
+This project uses [pandoc](http://pandoc.org/) to build the books. The pdf file is built with pdflatex, so you may need to download a latex distribution.
