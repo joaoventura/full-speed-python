@@ -10,13 +10,15 @@ chapters = \
 	chapters/iterators.md \
 	chapters/generators.md \
 
+options = --highlight-style tango
+
 all: epub pdf
 
 epub:
-	pandoc -o full-speed-python.epub metadata.yaml $(chapters)
+	pandoc -o full-speed-python.epub metadata.yaml $(options) $(chapters)
 
 pdf:
-	pandoc -o full-speed-python.pdf metadata.yaml -H tex/preamble.tex $(chapters)
+	pandoc -o full-speed-python.pdf metadata.yaml -H tex/preamble.tex $(options) $(chapters)
 
 clean:
 	rm *.epub *.pdf
