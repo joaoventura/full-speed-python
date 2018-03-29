@@ -9,6 +9,7 @@ chapters = \
 	chapters/classes.md \
 	chapters/iterators.md \
 	chapters/generators.md \
+	chapters/coroutines.md \
 
 options = metadata.yaml --highlight-style tango
 
