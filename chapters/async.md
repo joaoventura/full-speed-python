@@ -43,19 +43,16 @@ square(3)
 Since the `square()` function has a sleep function inside, the total execution time of this program would be 3 seconds. However, given that the computer is going to be idle for a full second each time the function is executed, why can't we start the next call while the previous is sleeping? Here's how we do it:
 
 ```Python
-# Group tasks in list
-tasks = [
+# Run async function and wait for completion
+results = loop.run_until_complete(asyncio.gather(
     square(1),
     square(2),
     square(3)
-]
-
-# Run async function and wait for completion
-results = loop.run_until_complete(asyncio.gather(*tasks))
+))
 print(results)
 ```
 
-Basically, we add all calls to a list and use ``asyncio.gather(*tasks)`` to inform the loop to wait for all tasks to finish.  Since the coroutines will start at almost the same time, the program will run for only 1 second. Asyncio **gather()** won't necessarily run the coroutines by order although it will return an ordered list of results.
+Basically, we  use ``asyncio.gather(*tasks)`` to inform the loop to wait for all tasks to finish. Since the coroutines will start at almost the same time, the program will run for only 1 second. Asyncio **gather()** won't necessarily run the coroutines by order although it will return an ordered list of results.
 
 ```Python
 $ python3 python_async.py
@@ -68,7 +65,38 @@ End square 3
 [1, 4, 9]
 ```
 
-Finally, async coroutine functions can **call other async coroutine functions** using the **await** keyword:
+Sometimes results may be needed as soon as they are available. For that we can use a second coroutine that deals with each result using ``asyncio.as_completed()``:
+
+```Python
+(...)
+
+async def when_done(tasks):
+    for res in asyncio.as_completed(tasks):
+        print('Result:', await res)
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(when_done([
+    square(1),
+    square(2),
+    square(3)
+]))
+```
+
+This will print something like:
+
+```Python
+Square 2
+Square 3
+Square 1
+End square 3
+Result: 9
+End square 1
+Result: 1
+End square 2
+Result: 4
+```
+
+Finally, async coroutines can call **other async coroutine functions** with the **await** keyword:
 
 ```Python
 async def compute_square(x):
