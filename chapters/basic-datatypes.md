@@ -61,7 +61,7 @@ However, multiplication works as repetition:
 
 3.  The volume of a sphere is given by (4/3 * pi * r^3). Calculate the volume of a sphere of radius 5. Suggestion: create a variable named "pi" with the value of 3.1415.
 
-4.  Use the module operator (%) to check which of the following numbers is even or odd: (1, 5, 20, 60/7).
+4.  Use the modulo operator (%) to check which of the following numbers is even or odd: (1, 5, 20, 60/7).
 
     Suggestion: the remainder of \(x/2\) is always zero when \(x\) is even.
 
