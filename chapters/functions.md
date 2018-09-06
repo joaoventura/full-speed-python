@@ -104,8 +104,8 @@ The trick with recursive functions is that there must be a "base" case where the
 
     \begin{equation}
     fib(n)=\begin{cases}
-        0, & \text{if $x=0$}.\\
-        1, & \text{if $x=1$}.\\
+        0, & \text{if $n=0$}.\\
+        1, & \text{if $n=1$}.\\
         fib(n-1) + fib(n-2), & \text{otherwise}.
     \end{cases}
     \end{equation}
