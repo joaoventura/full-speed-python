@@ -34,9 +34,9 @@ Hello, my name is Anna!
 
 Use the Python documentation on classes at <https://docs.python.org/3/tutorial/classes.html> to solve the following exercises.
 
-1.  Implement a class named "Rectangle" to store the coordinates of a rectangle given by (x1, y1) and (x2, y2).
+1.  Implement a class named "Rectangle" to store the coordinates of a rectangle given the top-left corner (x1, y1) and the bottom-right corner (x2, y2).
 
-2.  Implement the class constructor with the parameters (x1, y1, x2, y2) and store them in the class instances using the "self" keyword.
+2.  Implement the class constructor with the parameters (x1, y1, x2, y2) and store them in the class instance using the "self" keyword.
 
 3.  Implement the "width()" and "height()" methods which return, respectively, the width and height of a rectangle. Create two objects, instances of "Rectangle" to test the calculations.
 
