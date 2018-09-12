@@ -1,6 +1,6 @@
 # Generators
 
-If you read the previous chapter, you know that iterators are objects that are regularly used with "for" loops. In other others, iterators are objects that implement the iteration protocol. A Python generator is a convenient way to implement an iterator. Instead of a class, a generator is a function which returns a value each time the "yield" keyword is used. Here’s an example of a generator to count the values between two numbers:
+If you read the previous chapter, you know that iterators are objects that are regularly used with "for" loops. In other words, iterators are objects that implement the iteration protocol. A Python generator is a convenient way to implement an iterator. Instead of a class, a generator is a function which returns a value each time the "yield" keyword is used. Here’s an example of a generator to count the values between two numbers:
 
 ```Python
 def myrange(a, b):
