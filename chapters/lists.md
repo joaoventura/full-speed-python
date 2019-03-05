@@ -66,7 +66,7 @@ Sometimes you may want to filter the elements by a given condition. The "if" key
 [0, 2, 4, 6, 8]
 ```
 
-The exemple above returns all even values in range 0..10. More about list comprehensions can be found at <https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions>.
+The example above returns all even values in range 0..10. More about list comprehensions can be found at <https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions>.
 
 ## Exercises with list comprehensions
 
