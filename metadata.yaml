@@ -2,7 +2,7 @@
 title: Full Speed Python
 subtitle: v0.4.3
 author: João Ventura
-language: en-US
+lang: en-US
 
 # Variables for Latex
 documentclass: book
