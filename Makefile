@@ -12,7 +12,7 @@ chapters = \
 	chapters/coroutines.md \
 	chapters/async.md \
 
-options = metadata.yaml --highlight-style tango
+options = metadata.yaml --highlight-style tango --number-sections
 
 all: epub pdf
 
