@@ -4,7 +4,7 @@ As we saw previously, in Python we use the "for" loop to iterate over the conten
 
 ```Python
 >>> for value in [0, 1, 2, 3, 4, 5]:
-...     print(value)
+...     print(value*value)
 ...
 0
 1
