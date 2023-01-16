@@ -26,7 +26,7 @@ World
 
 Make sure that you insert a tab before both print expressions in the previous function. Tabs and spaces in Python are relevant and define that a block of code is somewhat dependent on a previous instruction. For instance, the print expressions are "inside" the "do\_hello" function therefore must have a tab.
 
-Functions can also receive parameters a return values (using the "return" keyword):
+Functions can also receive parameters and return values (using the "return" keyword):
 
 ```Python
 >>> def add_one(val):
