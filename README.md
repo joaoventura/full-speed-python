@@ -1,6 +1,6 @@
 # Full Speed Python
 
-Pdf and epub files can be downloaded from: https://jventura.gumroad.com/l/fullspeedpython. The ebooks are free (as in 0.00€), but if you want to support my work and allow me to improve it, you can set any other price.
+### About
 
 This book aims to teach the Python programming language using a practical approach. Its method is quite simple: after a short introduction to each topic, the reader is invited to learn more by solving the proposed exercises.
 
@@ -8,6 +8,9 @@ These exercises have been used extensively in my web development and distributed
 
 The source of this book is available on github (https://github.com/joaoventura/full-speed-python). I welcome any pull requests to correct misspellings, suggest new exercises or to provide clarification of the current content.
 
+### How to get the ebook?
+
+Pdf and epub files can be downloaded from: https://jventura.gumroad.com/l/fullspeedpython. The ebooks are free (as in free beer!), but if you want to support my work and allow me to improve it, you can set any other price.
 
 ## Building
 
