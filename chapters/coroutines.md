@@ -80,7 +80,7 @@ Consumer got 4
 Consumer got 9
 ```
 
-Also, with coroutines, data can be sent to multiple destinations.The following example implements two consumers where the first only prints numbers in 0..10 and the second only print numbers in 10..20:
+Also, with coroutines, data can be sent to multiple destinations. The following example implements two consumers where the first only prints numbers in 0..10 and the second only print numbers in 10..20:
 
 ```Python
 def producer(consumers):
